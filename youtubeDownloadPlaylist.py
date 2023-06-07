@@ -57,7 +57,7 @@ print("Saving to:", fullpath+"\n")
 #Downloading loop (with parameters) ====================================
 
 print("Playlists links:")
-if VoM == 4: #Only do video if input =4 as default is mp3
+if VoM == '4': #Only do video if input =4 as default is mp3
     while True: #Loop until error or user just typing newline to exit(should have a whole lot of errors... hopefully, so: True until nl to exit)
         playl = pl(input(">> "))
         try:
