@@ -24,13 +24,14 @@ print("\n")
 
 inp = input("Select download directory\n(D, M, specify(from user dir))>> ")
 print("\n")
-if inp == "D":
+if inp.upper() == "D":
     path = "Downloads"
-elif inp == "M":
+elif inp.upper() == "M":
     path = "Music"
 else:
     path = inp
-
+fullpath = os.path.join(os.getenv('USERPROFILE'), path)
+print("Saving to:", fullpath)
 #Downloading loop (with parameters) ====================================
 
 print("Links:")
@@ -39,7 +40,7 @@ if VoM == 4: #Only do video if input =4 as default is mp3
         link = input(">> ")
 
         try:
-            yt(link).streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download(os.path.join(os.getenv('USERPROFILE'), path))
+            yt(link).streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download(fullpath)
         except:
             print("bye bye...\n-Daselsdis")
             break
@@ -48,7 +49,7 @@ else:
         link = input(">> ")
 
         try:
-            yt(link).streams.filter(only_audio=True).first().download(os.path.join(os.getenv('USERPROFILE'), path))
+            yt(link).streams.filter(only_audio=True).first().download(fullpath)
         except:
             print("bye bye...\n-Daselsdis")
             break

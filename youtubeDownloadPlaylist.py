@@ -43,13 +43,13 @@ print("\n")
 
 inp = input("Select download directory\n(D, M, specify(from user dir))>> ")
 print("\n")
-if inp == "D":
+if inp.upper() == "D":
     path = "Downloads"
-elif inp == "M":
+elif inp.upper() == "M":
     path = "Music"
 else:
     path = inp
-
+print(os.path.join(os.getenv('USERPROFILE'), path))
 #Downloading loop (with parameters) ====================================
 
 print("Playlists links:")
