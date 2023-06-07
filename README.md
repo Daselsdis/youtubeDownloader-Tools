@@ -10,5 +10,7 @@ You can only download playlist, and I suspect only Public or Occult ones from yo
 # MORE EVEN MORE IMPORTANT STUFF:
 How to solve this: I found this answer on reddit and I will credit it at the end, the trick is to load the mix, and next, add to queue a random video(be careful, delete it later or you will download it too). Now you don't have a mix, you have a queue of videos, now you can make a playlist out of this. Make sure to make it Public or Occult, now that playlist's link should follow what's said above and you are good to go :D.
  Credit where credits due: https://www.reddit.com/r/youtube/comments/b33ecs/comment/hj74ays/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button. Moreover, all the pytube library resources have been an amazing tool and for any doubt feel free to ask me the author or check those docs.
+ 
+ Even more moreover, thanks to all those who contribute, this will evolve a bit over time and everybody is welcome. Special thanks to Ja1m33m for making it more verbose with dl location and making input more user friendly.
 # Have an amazing time, yours truly: Daselsdis
 _Also, feel free to tinker with this stuff, it has MIT license, free code :D (I wouldn't have made it this far without it)._

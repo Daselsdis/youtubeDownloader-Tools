@@ -49,7 +49,11 @@ elif inp.upper() == "M":
     path = "Music"
 else:
     path = inp
-print(os.path.join(os.getenv('USERPROFILE'), path))
+
+#Final download path ===================================================
+fullpath = os.path.join(os.getenv('USERPROFILE'), path)
+print("Saving to:", fullpath)
+
 #Downloading loop (with parameters) ====================================
 
 print("Playlists links:")
@@ -63,7 +67,7 @@ if VoM == 4: #Only do video if input =4 as default is mp3
                 vid = yt(url)
                 i+=1
                 print("("+str(i)+"/"+l+")-"+"Downloading: "+vid.title+".")
-                vid.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download(os.path.join(os.getenv('USERPROFILE'), path+"\\"+playl.title))
+                vid.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download(fullpath+"\\"+playl.title)
         except:
             print("bye bye...\n-Daselsdis")
             break
@@ -77,7 +81,7 @@ else:
                 vid = yt(url)
                 i+=1
                 print("("+str(i)+"/"+l+")-"+"Downloading: "+vid.title+".")
-                vid.streams.filter(only_audio=True).first().download(os.path.join(os.getenv('USERPROFILE'), path+"\\"+playl.title))
+                vid.streams.filter(only_audio=True).first().download(fullpath+"\\"+playl.title)
         except:
             print("bye bye...\n-Daselsdis")
             break
