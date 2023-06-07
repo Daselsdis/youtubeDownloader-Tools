@@ -1,6 +1,6 @@
 # youtubeDownloader-Tools
 Youtube downloader tools, separated into single and playlist scripts for convenience.
-
+Not that proud of the programming in this, but it's a good centralized resource to a problem it took me some weeks to find a good mend to, so, proud of that part.
 
 ## Big important stuff
 Youtube playlists and mixes (Mix) are a different thing, you cannot directly download mixes from just the link.
