@@ -12,5 +12,6 @@ How to solve this: I found this answer on reddit and I will credit it at the end
  Credit where credits due: https://www.reddit.com/r/youtube/comments/b33ecs/comment/hj74ays/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button. Moreover, all the pytube library resources have been an amazing tool and for any doubt feel free to ask me the author or check those docs.
  
  Even more moreover, thanks to all those who contribute, this will evolve a bit over time and everybody is welcome. Special thanks to Ja1m33m for making it more verbose with dl location and making input more user friendly.
+ 
 # Have an amazing time, yours truly: Daselsdis
 _Also, feel free to tinker with this stuff, it has MIT license, free code :D (I wouldn't have made it this far without it)._

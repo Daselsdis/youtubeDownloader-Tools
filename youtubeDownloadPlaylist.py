@@ -52,7 +52,7 @@ else:
 
 #Final download path ===================================================
 fullpath = os.path.join(os.getenv('USERPROFILE'), path)
-print("Saving to:", fullpath)
+print("Saving to:", fullpath+"\n")
 
 #Downloading loop (with parameters) ====================================
 
