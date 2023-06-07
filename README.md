@@ -3,7 +3,7 @@ Youtube downloader tools, separated into single and playlist scripts for conveni
 
 
 ## Big important stuff
-Youtube playlists and mixes are a different thing, you cannot directly download mixes from just the link.
+Youtube playlists and mixes (Mix) are a different thing, you cannot directly download mixes from just the link.
 As an example, a playlist's link's Id is in my experience 34 chars long, and can take the form: "https://www.youtube.com/playlist?list="+Id. Mixes on the other hand have shorter playlist's link's Id, in my experience 13 chars long, and can take the form: "https://www.youtube.com/watch?v=VIDEOID&list=MIXID".
 You can only download playlist, and I suspect only Public or Occult ones from your channel or whoever's if they are accessible from the outside via link.
 
