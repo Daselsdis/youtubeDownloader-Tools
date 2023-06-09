@@ -43,7 +43,9 @@ if VoM == '4': #Only do video if input =4 as default is mp3
         link = input(">> ")
 
         try:
-            yt(link).streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download(fullpath)
+            vid = yt(link)
+            print("   Downloading: "+vid.title+".")
+            vid.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download(fullpath)
         except:
             print("bye bye...\n-Daselsdis")
             break
@@ -52,7 +54,9 @@ else:
         link = input(">> ")
 
         try:
-            yt(link).streams.filter(only_audio=True).first().download(fullpath)
+            vid = yt(link)
+            print("   Downloading: "+vid.title+".")
+            vid.streams.filter(only_audio=True).first().download(fullpath)
         except:
             print("bye bye...\n-Daselsdis")
             break
